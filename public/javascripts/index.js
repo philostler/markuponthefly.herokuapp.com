@@ -1,5 +1,9 @@
+$.ajaxSetup ({  
+  cache: false  
+}); 
+
 $(document).ready(function onReady() {
   $("#raw").keyup(function onKeyUp() {
-    $("#rendered").html(this.value);
+    $("#rendered").load("/render", { raw: this.value })
   });
 });
