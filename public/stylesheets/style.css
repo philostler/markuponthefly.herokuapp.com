@@ -1,4 +1,6 @@
 body {
+  background-color: #171717;
+  color: #eee;
   padding-left: 50px;
   padding-right: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -8,6 +10,7 @@ textarea#raw {
   width: 100%;
   height: 200px;
   border: 1px dashed black;
+  box-shadow: 5px 5px 5px #333;
 }
 
 div#rendered {
