@@ -6,7 +6,7 @@ exports.index = function(req, res){
 };
 
 exports.render = function(request, response){
-  var input = request.body.raw;
-  var output = require("markdown").markdown.toHTML(input);
-  response.end(output);
+  var markdown = require("markdown");
+  var body = markdown.markdown.toHTML(request.body.raw);
+  response.end(body);
 };
